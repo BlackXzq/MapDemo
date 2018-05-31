@@ -28,17 +28,27 @@
     }
     UITabBarController *rootTabar = [[UITabBarController alloc] init];
     LocationViewController *locationCtl = [[LocationViewController alloc] init];
-    UINavigationController *locNavCtl = [self createContainTabarNavCtl:locationCtl imgeName:@"location" hightImageName:@"location_H" title:@"定位"];
+    UINavigationController *locNavCtl = [self createContainTabarNavCtl:locationCtl
+                                                              imgeName:@"location"
+                                                        hightImageName:@"location_H"
+                                                                 title:@"定位"];
     
     EagleViewController *eagleCtl = [[EagleViewController alloc] init];
-    UINavigationController *eagleNavCtl = [self createContainTabarNavCtl:eagleCtl imgeName:@"eagle" hightImageName:@"eagle_H" title:@"鹰眼"];
+    UINavigationController *eagleNavCtl = [self createContainTabarNavCtl:eagleCtl
+                                                                imgeName:@"eagle"
+                                                          hightImageName:@"eagle_H"
+                                                                   title:@"鹰眼"];
     
     rootTabar.viewControllers = @[locNavCtl, eagleNavCtl];
     self.window.rootViewController = rootTabar;
     [self.window makeKeyAndVisible];
+    rootTabar.selectedIndex = 1;
 }
 
-- (UINavigationController *)createContainTabarNavCtl:(UIViewController *)controller imgeName:(NSString *)imgeName hightImageName:(NSString *)hightImgName title:(NSString *)title {
+- (UINavigationController *)createContainTabarNavCtl:(UIViewController *)controller
+                                            imgeName:(NSString *)imgeName
+                                      hightImageName:(NSString *)hightImgName
+                                               title:(NSString *)title {
     
     UINavigationController *navCtl = [[UINavigationController alloc] initWithRootViewController:controller];
     

@@ -20,6 +20,10 @@
 		C173C7E120BF8BF00059066F /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C173C7DF20BF8BF00059066F /* LocationViewController.xib */; };
 		C173C7E520BF8BFF0059066F /* EagleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7E320BF8BFF0059066F /* EagleViewController.m */; };
 		C173C7E620BF8BFF0059066F /* EagleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C173C7E420BF8BFF0059066F /* EagleViewController.xib */; };
+		C173C7EC20BFBEE40059066F /* ScanContrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7EA20BFBEE40059066F /* ScanContrailViewController.m */; };
+		C173C7ED20BFBEE40059066F /* ScanContrailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C173C7EB20BFBEE40059066F /* ScanContrailViewController.xib */; };
+		C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7EF20BFBEF30059066F /* ContrailViewController.m */; };
+		C173C7F220BFBEF30059066F /* ContrailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C173C7F020BFBEF30059066F /* ContrailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +60,12 @@
 		C173C7E220BF8BFF0059066F /* EagleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EagleViewController.h; sourceTree = "<group>"; };
 		C173C7E320BF8BFF0059066F /* EagleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EagleViewController.m; sourceTree = "<group>"; };
 		C173C7E420BF8BFF0059066F /* EagleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EagleViewController.xib; sourceTree = "<group>"; };
+		C173C7E920BFBEE40059066F /* ScanContrailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanContrailViewController.h; sourceTree = "<group>"; };
+		C173C7EA20BFBEE40059066F /* ScanContrailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanContrailViewController.m; sourceTree = "<group>"; };
+		C173C7EB20BFBEE40059066F /* ScanContrailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanContrailViewController.xib; sourceTree = "<group>"; };
+		C173C7EE20BFBEF30059066F /* ContrailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContrailViewController.h; sourceTree = "<group>"; };
+		C173C7EF20BFBEF30059066F /* ContrailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrailViewController.m; sourceTree = "<group>"; };
+		C173C7F020BFBEF30059066F /* ContrailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				C173C7D620BF8A600059066F /* TraceService */,
+				C173C7E820BFBE610059066F /* eagle */,
+				C173C7E720BFBE580059066F /* location */,
 				C173C7B620BE36EB0059066F /* AppDelegate.h */,
 				C173C7B720BE36EB0059066F /* AppDelegate.m */,
-				C173C7E220BF8BFF0059066F /* EagleViewController.h */,
-				C173C7E320BF8BFF0059066F /* EagleViewController.m */,
-				C173C7E420BF8BFF0059066F /* EagleViewController.xib */,
-				C173C7DD20BF8BF00059066F /* LocationViewController.h */,
-				C173C7DE20BF8BF00059066F /* LocationViewController.m */,
-				C173C7DF20BF8BF00059066F /* LocationViewController.xib */,
 				C173C7BC20BE36EB0059066F /* Main.storyboard */,
 				C173C7BF20BE36F20059066F /* images.xcassets */,
 				C173C7C120BE36F20059066F /* LaunchScreen.storyboard */,
@@ -117,6 +123,32 @@
 				C173C7D820BF8A720059066F /* BKTraceServiceManager.m */,
 			);
 			path = TraceService;
+			sourceTree = "<group>";
+		};
+		C173C7E720BFBE580059066F /* location */ = {
+			isa = PBXGroup;
+			children = (
+				C173C7DD20BF8BF00059066F /* LocationViewController.h */,
+				C173C7DE20BF8BF00059066F /* LocationViewController.m */,
+				C173C7DF20BF8BF00059066F /* LocationViewController.xib */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		C173C7E820BFBE610059066F /* eagle */ = {
+			isa = PBXGroup;
+			children = (
+				C173C7E220BF8BFF0059066F /* EagleViewController.h */,
+				C173C7E320BF8BFF0059066F /* EagleViewController.m */,
+				C173C7E420BF8BFF0059066F /* EagleViewController.xib */,
+				C173C7E920BFBEE40059066F /* ScanContrailViewController.h */,
+				C173C7EA20BFBEE40059066F /* ScanContrailViewController.m */,
+				C173C7EB20BFBEE40059066F /* ScanContrailViewController.xib */,
+				C173C7EE20BFBEF30059066F /* ContrailViewController.h */,
+				C173C7EF20BFBEF30059066F /* ContrailViewController.m */,
+				C173C7F020BFBEF30059066F /* ContrailViewController.xib */,
+			);
+			path = eagle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C173C7E620BF8BFF0059066F /* EagleViewController.xib in Resources */,
+				C173C7F220BFBEF30059066F /* ContrailViewController.xib in Resources */,
 				C173C7C320BE36F20059066F /* LaunchScreen.storyboard in Resources */,
 				C173C7C020BE36F20059066F /* images.xcassets in Resources */,
+				C173C7ED20BFBEE40059066F /* ScanContrailViewController.xib in Resources */,
 				C173C7BE20BE36EB0059066F /* Main.storyboard in Resources */,
 				C173C7E120BF8BF00059066F /* LocationViewController.xib in Resources */,
 			);
@@ -198,10 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C173C7DC20BF8A990059066F /* BKConstrants.m in Sources */,
+				C173C7EC20BFBEE40059066F /* ScanContrailViewController.m in Sources */,
 				C173C7E520BF8BFF0059066F /* EagleViewController.m in Sources */,
 				C173C7E020BF8BF00059066F /* LocationViewController.m in Sources */,
 				C173C7C620BE36F20059066F /* main.m in Sources */,
 				C173C7B820BE36EB0059066F /* AppDelegate.m in Sources */,
+				C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */,
 				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

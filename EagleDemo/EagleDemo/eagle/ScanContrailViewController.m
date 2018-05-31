@@ -1,22 +1,22 @@
 //
-//  EagleViewController.m
+//  ScanContrailViewController.m
 //  EagleDemo
 //
 //  Created by Black on 2018/5/31.
 //  Copyright © 2018年 Black. All rights reserved.
 //
 
-#import "EagleViewController.h"
+#import "ScanContrailViewController.h"
 
-@interface EagleViewController ()
+@interface ScanContrailViewController ()
 
 @end
 
-@implementation EagleViewController
+@implementation ScanContrailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"鹰眼追踪";
+    self.navigationItem.title = @"轨迹查看";
 }
 
 - (void)didReceiveMemoryWarning {
