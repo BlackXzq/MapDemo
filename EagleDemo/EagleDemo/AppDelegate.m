@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LocationViewController.h"
+#import "EagleViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +18,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setupRootController];
     return YES;
+}
+
+- (void)setupRootController {
+    if (!self.window) {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    }
+    UITabBarController *rootTabar = [[UITabBarController alloc] init];
+    LocationViewController *locationCtl = [[LocationViewController alloc] init];
+    UINavigationController *locNavCtl = [self createContainTabarNavCtl:locationCtl imgeName:@"location" hightImageName:@"location_H" title:@"定位"];
+    
+    EagleViewController *eagleCtl = [[EagleViewController alloc] init];
+    UINavigationController *eagleNavCtl = [self createContainTabarNavCtl:eagleCtl imgeName:@"eagle" hightImageName:@"eagle_H" title:@"鹰眼"];
+    
+    rootTabar.viewControllers = @[locNavCtl, eagleNavCtl];
+    self.window.rootViewController = rootTabar;
+    [self.window makeKeyAndVisible];
+}
+
+- (UINavigationController *)createContainTabarNavCtl:(UIViewController *)controller imgeName:(NSString *)imgeName hightImageName:(NSString *)hightImgName title:(NSString *)title {
+    
+    UINavigationController *navCtl = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    [controller.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
+    controller.tabBarItem.title = title;
+    UIImage *locationNoramlImg = [self reSizeImage:[UIImage imageNamed:imgeName] toSize:CGSizeMake(30, 30)];
+    UIImage *locationHImg = [self reSizeImage:[UIImage imageNamed:hightImgName] toSize:CGSizeMake(30, 30)];
+    controller.tabBarItem.image = [locationNoramlImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    controller.tabBarItem.selectedImage = [locationHImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    return navCtl;
+}
+
+- (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize
+{
+    UIGraphicsBeginImageContext(CGSizeMake(reSize.width, reSize.height));
+    [image drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return reSizeImage;
 }
 
 
