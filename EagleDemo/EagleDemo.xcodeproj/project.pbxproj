@@ -15,7 +15,8 @@
 		C173C7C620BE36F20059066F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7C520BE36F20059066F /* main.m */; };
 		C173C7CE20BE9E370059066F /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7CC20BE9E170059066F /* BaiduTraceSDK.framework */; };
 		C173C7CF20BE9E370059066F /* BaiduTraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7CC20BE9E170059066F /* BaiduTraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C173C7D320BE9F800059066F /* Constrants.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7D220BE9F800059066F /* Constrants.m */; };
+		C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7D820BF8A720059066F /* BKTraceServiceManager.m */; };
+		C173C7DC20BF8A990059066F /* BKConstrants.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7DA20BF8A980059066F /* BKConstrants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,8 +45,10 @@
 		C173C7C420BE36F20059066F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C173C7C520BE36F20059066F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C173C7CC20BE9E170059066F /* BaiduTraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduTraceSDK.framework; sourceTree = "<group>"; };
-		C173C7D120BE9F800059066F /* Constrants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constrants.h; sourceTree = "<group>"; };
-		C173C7D220BE9F800059066F /* Constrants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constrants.m; sourceTree = "<group>"; };
+		C173C7D720BF8A720059066F /* BKTraceServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKTraceServiceManager.h; sourceTree = "<group>"; };
+		C173C7D820BF8A720059066F /* BKTraceServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKTraceServiceManager.m; sourceTree = "<group>"; };
+		C173C7DA20BF8A980059066F /* BKConstrants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKConstrants.m; sourceTree = "<group>"; };
+		C173C7DB20BF8A980059066F /* BKConstrants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKConstrants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +83,11 @@
 		C173C7B520BE36EB0059066F /* EagleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C173C7D620BF8A600059066F /* TraceService */,
 				C173C7B620BE36EB0059066F /* AppDelegate.h */,
 				C173C7B720BE36EB0059066F /* AppDelegate.m */,
 				C173C7B920BE36EB0059066F /* ViewController.h */,
 				C173C7BA20BE36EB0059066F /* ViewController.m */,
-				C173C7D120BE9F800059066F /* Constrants.h */,
-				C173C7D220BE9F800059066F /* Constrants.m */,
 				C173C7BC20BE36EB0059066F /* Main.storyboard */,
 				C173C7BF20BE36F20059066F /* Assets.xcassets */,
 				C173C7C120BE36F20059066F /* LaunchScreen.storyboard */,
@@ -93,6 +95,17 @@
 				C173C7C520BE36F20059066F /* main.m */,
 			);
 			path = EagleDemo;
+			sourceTree = "<group>";
+		};
+		C173C7D620BF8A600059066F /* TraceService */ = {
+			isa = PBXGroup;
+			children = (
+				C173C7DB20BF8A980059066F /* BKConstrants.h */,
+				C173C7DA20BF8A980059066F /* BKConstrants.m */,
+				C173C7D720BF8A720059066F /* BKTraceServiceManager.h */,
+				C173C7D820BF8A720059066F /* BKTraceServiceManager.m */,
+			);
+			path = TraceService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,10 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C173C7DC20BF8A990059066F /* BKConstrants.m in Sources */,
 				C173C7BB20BE36EB0059066F /* ViewController.m in Sources */,
 				C173C7C620BE36F20059066F /* main.m in Sources */,
-				C173C7D320BE9F800059066F /* Constrants.m in Sources */,
 				C173C7B820BE36EB0059066F /* AppDelegate.m in Sources */,
+				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

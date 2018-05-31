@@ -1,5 +1,5 @@
 //
-//  Constrants.h
+//  BKConstrants.h
 //  EagleDemo
 //
 //  Created by Black on 2018/5/30.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Constrants : NSObject
+@interface BKConstrants : NSObject
 
 FOUNDATION_EXPORT NSString * const AK;
 

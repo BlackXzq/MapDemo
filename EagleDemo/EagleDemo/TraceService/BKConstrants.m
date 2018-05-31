@@ -1,14 +1,14 @@
 //
-//  Constrants.m
+//  BKConstrants.m
 //  EagleDemo
 //
 //  Created by Black on 2018/5/30.
 //  Copyright © 2018年 Black. All rights reserved.
 //
 
-#import "Constrants.h"
+#import "BKConstrants.h"
 
-@implementation Constrants
+@implementation BKConstrants
 // 填写你在API控制台申请的iOS类型的AK
 NSString * const AK = @"HD0XSKxVdR4fzGPiGLQiiX7teGINMXSZ";
 
