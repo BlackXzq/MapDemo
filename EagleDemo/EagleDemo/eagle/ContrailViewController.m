@@ -23,17 +23,17 @@
 }
 
 - (void)resfreshBtnState {
-    self.startTransBtn.enabled = ![BKTraceServiceManager defaultManager].isServiceStarted;
-    self.stopTransBtn.enabled = [BKTraceServiceManager defaultManager].isServiceStarted;
+    self.startTransBtn.enabled = ![BKTraceServiceManager shareManager].isServiceStarted;
+    self.stopTransBtn.enabled = [BKTraceServiceManager shareManager].isServiceStarted;
 }
 //开始发运上传轨迹
 - (IBAction)startTransfer:(UIButton *)sender {
-    [[BKTraceServiceManager defaultManager] startUploadContrail];
+    [[BKTraceServiceManager shareManager] startUploadContrail];
     [self resfreshBtnState];
 }
 //完成运单，结束上传轨迹
 - (IBAction)finishTransfer:(UIButton *)sender {
-    [[BKTraceServiceManager defaultManager] stopUploadContrail];
+    [[BKTraceServiceManager shareManager] stopUploadContrail];
     [self resfreshBtnState];
 }
 

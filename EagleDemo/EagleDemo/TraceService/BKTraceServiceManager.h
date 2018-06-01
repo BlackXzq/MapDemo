@@ -15,7 +15,7 @@
 @property (nonatomic, assign, readonly) BOOL isServiceStarted;
 
 //初始化路径管理服务
-+ (instancetype)defaultManager;
++ (instancetype)shareManager;
 //初始化鹰眼服务数据配置
 - (void)setupServiceInfo;
 

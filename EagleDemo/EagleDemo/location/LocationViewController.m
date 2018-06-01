@@ -7,6 +7,7 @@
 //
 
 #import "LocationViewController.h"
+#import "BKLocationServiceManager.h"
 
 @interface LocationViewController ()
 
@@ -23,15 +24,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)startLocation:(UIButton *)sender {
+    [[BKLocationServiceManager shareManager] bk_startUpdatingLocation];
 }
-*/
+- (IBAction)stopLcation:(UIButton *)sender {
+    [[BKLocationServiceManager shareManager] bk_stopUpdatingLocation];
+}
+- (IBAction)creatGeoFence:(UIButton *)sender {
+    [[BKLocationServiceManager shareManager] bk_creatGeoFence];
+}
+- (IBAction)removeGeoFence:(UIButton *)sender {
+    [[BKLocationServiceManager shareManager] bk_removeGeoFence];
+}
+
 
 @end

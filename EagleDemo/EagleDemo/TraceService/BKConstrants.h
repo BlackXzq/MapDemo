@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define GLOBAL_QUEUE dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define ALERT(msg) [[[UIAlertView alloc]initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil] show];
 
 #define GatherInterval  10  //默认轨迹采集周期
 #define PackInterval    30  //默认轨迹上传周期

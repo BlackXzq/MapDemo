@@ -34,7 +34,7 @@
 }
 //  围栏设置
 - (IBAction)weilanshezhi:(UIButton *)sender {
-    [[BKTraceServiceManager defaultManager] changeGatherAndPackIntervals:10 packInterval:30];
+    
 
 }
 //  轨迹查看

@@ -18,7 +18,7 @@ NSString * const SericeStatusKey = @"SericeStatusKey";
 
 @implementation BKTraceServiceManager
 
-+ (instancetype)defaultManager {
++ (instancetype)shareManager {
     static BKTraceServiceManager *__instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

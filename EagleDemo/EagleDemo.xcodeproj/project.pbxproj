@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C173C7B820BE36EB0059066F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7B720BE36EB0059066F /* AppDelegate.m */; };
+		C173C7B820BE36EB0059066F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C173C7B720BE36EB0059066F /* AppDelegate.mm */; };
 		C173C7BE20BE36EB0059066F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173C7BC20BE36EB0059066F /* Main.storyboard */; };
 		C173C7C020BE36F20059066F /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C173C7BF20BE36F20059066F /* images.xcassets */; };
 		C173C7C320BE36F20059066F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173C7C120BE36F20059066F /* LaunchScreen.storyboard */; };
@@ -25,6 +25,15 @@
 		C173C7F520BFDD810059066F /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C7F420BFDD810059066F /* UserEntity.m */; };
 		C173C7F920C117880059066F /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7F720C117810059066F /* BaiduTraceSDK.framework */; };
 		C173C7FA20C117880059066F /* BaiduTraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7F720C117810059066F /* BaiduTraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C173C7FC20C1199B0059066F /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7FB20C1199B0059066F /* BMKLocationKit.framework */; };
+		C173C7FF20C11A370059066F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C7FE20C11A370059066F /* CoreLocation.framework */; };
+		C173C80120C11A410059066F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80020C11A410059066F /* SystemConfiguration.framework */; };
+		C173C80320C11A4A0059066F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80220C11A4A0059066F /* Security.framework */; };
+		C173C80520C11A540059066F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80420C11A540059066F /* libsqlite3.0.tbd */; };
+		C173C80720C11A5F0059066F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80620C11A5F0059066F /* CoreTelephony.framework */; };
+		C173C80920C11A710059066F /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80820C11A710059066F /* libstdc++.6.0.9.tbd */; };
+		C173C80B20C11A7B0059066F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80A20C11A7B0059066F /* AdSupport.framework */; };
+		C173C80F20C11F2C0059066F /* BKLocationServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C80E20C11F2C0059066F /* BKLocationServiceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +53,7 @@
 /* Begin PBXFileReference section */
 		C173C7B320BE36EB0059066F /* EagleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C173C7B620BE36EB0059066F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C173C7B720BE36EB0059066F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C173C7B720BE36EB0059066F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		C173C7BD20BE36EB0059066F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C173C7BF20BE36F20059066F /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		C173C7C220BE36F20059066F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +78,16 @@
 		C173C7F320BFDD810059066F /* UserEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
 		C173C7F420BFDD810059066F /* UserEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
 		C173C7F720C117810059066F /* BaiduTraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduTraceSDK.framework; sourceTree = "<group>"; };
+		C173C7FB20C1199B0059066F /* BMKLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMKLocationKit.framework; sourceTree = "<group>"; };
+		C173C7FE20C11A370059066F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C173C80020C11A410059066F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C173C80220C11A4A0059066F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C173C80420C11A540059066F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C173C80620C11A5F0059066F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C173C80820C11A710059066F /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		C173C80A20C11A7B0059066F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C173C80D20C11F2C0059066F /* BKLocationServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKLocationServiceManager.h; sourceTree = "<group>"; };
+		C173C80E20C11F2C0059066F /* BKLocationServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKLocationServiceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C173C80B20C11A7B0059066F /* AdSupport.framework in Frameworks */,
+				C173C80920C11A710059066F /* libstdc++.6.0.9.tbd in Frameworks */,
+				C173C80720C11A5F0059066F /* CoreTelephony.framework in Frameworks */,
+				C173C80520C11A540059066F /* libsqlite3.0.tbd in Frameworks */,
+				C173C80320C11A4A0059066F /* Security.framework in Frameworks */,
+				C173C80120C11A410059066F /* SystemConfiguration.framework in Frameworks */,
+				C173C7FF20C11A370059066F /* CoreLocation.framework in Frameworks */,
 				C173C7F920C117880059066F /* BaiduTraceSDK.framework in Frameworks */,
+				C173C7FC20C1199B0059066F /* BMKLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +115,7 @@
 			children = (
 				C173C7B520BE36EB0059066F /* EagleDemo */,
 				C173C7B420BE36EB0059066F /* Products */,
+				C173C7FD20C11A370059066F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +132,11 @@
 			children = (
 				C173C7F620C116E70059066F /* resources */,
 				C173C7D620BF8A600059066F /* TraceService */,
+				C173C80C20C11F0A0059066F /* LocationService */,
 				C173C7E820BFBE610059066F /* eagle */,
 				C173C7E720BFBE580059066F /* location */,
 				C173C7B620BE36EB0059066F /* AppDelegate.h */,
-				C173C7B720BE36EB0059066F /* AppDelegate.m */,
+				C173C7B720BE36EB0059066F /* AppDelegate.mm */,
 				C173C7BC20BE36EB0059066F /* Main.storyboard */,
 				C173C7BF20BE36F20059066F /* images.xcassets */,
 				C173C7C120BE36F20059066F /* LaunchScreen.storyboard */,
@@ -159,10 +188,34 @@
 		C173C7F620C116E70059066F /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C173C7FB20C1199B0059066F /* BMKLocationKit.framework */,
 				C173C7F720C117810059066F /* BaiduTraceSDK.framework */,
 			);
 			path = resources;
 			sourceTree = SOURCE_ROOT;
+		};
+		C173C7FD20C11A370059066F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C173C80A20C11A7B0059066F /* AdSupport.framework */,
+				C173C80820C11A710059066F /* libstdc++.6.0.9.tbd */,
+				C173C80620C11A5F0059066F /* CoreTelephony.framework */,
+				C173C80420C11A540059066F /* libsqlite3.0.tbd */,
+				C173C80220C11A4A0059066F /* Security.framework */,
+				C173C80020C11A410059066F /* SystemConfiguration.framework */,
+				C173C7FE20C11A370059066F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C173C80C20C11F0A0059066F /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				C173C80D20C11F2C0059066F /* BKLocationServiceManager.h */,
+				C173C80E20C11F2C0059066F /* BKLocationServiceManager.m */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -249,7 +302,8 @@
 				C173C7E520BF8BFF0059066F /* EagleViewController.m in Sources */,
 				C173C7E020BF8BF00059066F /* LocationViewController.m in Sources */,
 				C173C7C620BE36F20059066F /* main.m in Sources */,
-				C173C7B820BE36EB0059066F /* AppDelegate.m in Sources */,
+				C173C80F20C11F2C0059066F /* BKLocationServiceManager.m in Sources */,
+				C173C7B820BE36EB0059066F /* AppDelegate.mm in Sources */,
 				C173C7F520BFDD810059066F /* UserEntity.m in Sources */,
 				C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */,
 				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
@@ -407,6 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -432,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
