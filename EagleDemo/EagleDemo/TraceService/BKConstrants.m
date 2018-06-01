@@ -19,4 +19,11 @@ NSString * const MCODE = @"com.anji.plus.hawkeye";
 NSUInteger const serviceID = 200622;
 
 NSString * const YYServiceOperationResultNotification = @"YYServiceOperationResultNotification";
+
+
+NSString * const USERID = @"2018";
+NSString * const USERNAME = @"Nero_H";
+NSString * const USERPHONENUM = @"13761238312";
+
+
 @end

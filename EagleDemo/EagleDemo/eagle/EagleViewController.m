@@ -9,6 +9,7 @@
 #import "EagleViewController.h"
 #import "ScanContrailViewController.h"
 #import "ContrailViewController.h"
+#import "BKTraceServiceManager.h"
 
 @interface EagleViewController ()
 
@@ -33,7 +34,8 @@
 }
 //  围栏设置
 - (IBAction)weilanshezhi:(UIButton *)sender {
-    
+    [[BKTraceServiceManager defaultManager] changeGatherAndPackIntervals:10 packInterval:30];
+
 }
 //  轨迹查看
 - (IBAction)guijichakan:(UIButton *)sender {

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LocationViewController.h"
 #import "EagleViewController.h"
+#import "BKTraceServiceManager.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupRootController];
+    
+    [self setConfigure];
     return YES;
 }
 
@@ -71,6 +74,11 @@
     return reSizeImage;
 }
 
+
+- (void)setConfigure {
+    //  初始化鹰眼配置信息
+    [[BKTraceServiceManager defaultManager] setupServiceInfo];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

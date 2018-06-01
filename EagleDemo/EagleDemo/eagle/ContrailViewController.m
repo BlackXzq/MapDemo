@@ -7,8 +7,10 @@
 //
 
 #import "ContrailViewController.h"
-
+#import "BKTraceServiceManager.h"
 @interface ContrailViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *startTransBtn;
+@property (weak, nonatomic) IBOutlet UIButton *stopTransBtn;
 
 @end
 
@@ -17,6 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"轨迹管理";
+    [self resfreshBtnState];
+}
+
+- (void)resfreshBtnState {
+    self.startTransBtn.enabled = ![BKTraceServiceManager defaultManager].isServiceStarted;
+    self.stopTransBtn.enabled = [BKTraceServiceManager defaultManager].isServiceStarted;
+}
+//开始发运上传轨迹
+- (IBAction)startTransfer:(UIButton *)sender {
+    [[BKTraceServiceManager defaultManager] startUploadContrail];
+    [self resfreshBtnState];
+}
+//完成运单，结束上传轨迹
+- (IBAction)finishTransfer:(UIButton *)sender {
+    [[BKTraceServiceManager defaultManager] stopUploadContrail];
+    [self resfreshBtnState];
 }
 
 - (void)didReceiveMemoryWarning {
