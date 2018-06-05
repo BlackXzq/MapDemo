@@ -46,7 +46,7 @@
     rootTabar.viewControllers = @[locNavCtl, eagleNavCtl];
     self.window.rootViewController = rootTabar;
     [self.window makeKeyAndVisible];
-    rootTabar.selectedIndex = 1;
+//    rootTabar.selectedIndex = 1;
 }
 
 - (UINavigationController *)createContainTabarNavCtl:(UIViewController *)controller
@@ -80,6 +80,7 @@
     //  初始化鹰眼配置信息
     [[BKTraceServiceManager shareManager] setupServiceInfo];
     [[BKLocationServiceManager shareManager] setupServiceInfo];
+    [[BKMapServiceManager shareManager] setupServiceInfo];
     
 }
 

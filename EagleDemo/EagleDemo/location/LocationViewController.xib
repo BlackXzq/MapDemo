@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcn-Vg-9fi">
-                    <rect key="frame" x="191" y="109" width="124" height="40"/>
+                    <rect key="frame" x="224" y="72" width="124" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93345023419999995" green="1" blue="0.40520810829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="关闭定位"/>
@@ -30,7 +30,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-mv-nYJ">
-                    <rect key="frame" x="40" y="109" width="124" height="40"/>
+                    <rect key="frame" x="22" y="72" width="124" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93345023422060935" green="1" blue="0.4052081082567055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="开始定位"/>
@@ -39,7 +39,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-XR-BQe">
-                    <rect key="frame" x="40" y="199" width="124" height="41"/>
+                    <rect key="frame" x="22" y="120" width="124" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93345023422060935" green="1" blue="0.4052081082567055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="创建围栏"/>
@@ -48,7 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-Yz-O3U">
-                    <rect key="frame" x="196" y="199" width="119" height="41"/>
+                    <rect key="frame" x="224" y="120" width="124" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93345023422060935" green="1" blue="0.4052081082567055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="移除围栏"/>
@@ -58,8 +58,10 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-528" y="-77"/>
+            <point key="canvasLocation" x="-560" y="-330"/>
         </view>
     </objects>
 </document>

@@ -43,6 +43,7 @@
 		C173C81E20C62C840059066F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81C20C62C840059066F /* libcrypto.a */; };
 		C173C81F20C62C840059066F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81D20C62C840059066F /* libssl.a */; };
 		C173C82120C62D5A0059066F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C173C82020C62D5A0059066F /* mapapi.bundle */; };
+		C173C82620C631840059066F /* BKMapServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C82520C631840059066F /* BKMapServiceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +108,8 @@
 		C173C81D20C62C840059066F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		C173C82020C62D5A0059066F /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = resources/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 		C173C82220C62DE70059066F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C173C82420C631840059066F /* BKMapServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKMapServiceManager.h; sourceTree = "<group>"; };
+		C173C82520C631840059066F /* BKMapServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKMapServiceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,7 @@
 				C173C7F620C116E70059066F /* resources */,
 				C173C7D620BF8A600059066F /* TraceService */,
 				C173C80C20C11F0A0059066F /* LocationService */,
+				C173C82320C631670059066F /* MapService */,
 				C173C7E820BFBE610059066F /* eagle */,
 				C173C7E720BFBE580059066F /* location */,
 				C173C7B620BE36EB0059066F /* AppDelegate.h */,
@@ -254,6 +258,15 @@
 			path = LocationService;
 			sourceTree = "<group>";
 		};
+		C173C82320C631670059066F /* MapService */ = {
+			isa = PBXGroup;
+			children = (
+				C173C82420C631840059066F /* BKMapServiceManager.h */,
+				C173C82520C631840059066F /* BKMapServiceManager.m */,
+			);
+			path = MapService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,6 +358,7 @@
 				C173C7F520BFDD810059066F /* UserEntity.m in Sources */,
 				C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */,
 				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
+				C173C82620C631840059066F /* BKMapServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A44TJ86VM;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -509,6 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -520,6 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A44TJ86VM;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -541,6 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s armv7";
 			};
 			name = Release;
 		};
