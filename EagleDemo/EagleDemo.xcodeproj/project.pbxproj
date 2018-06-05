@@ -44,6 +44,7 @@
 		C173C81F20C62C840059066F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81D20C62C840059066F /* libssl.a */; };
 		C173C82120C62D5A0059066F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C173C82020C62D5A0059066F /* mapapi.bundle */; };
 		C173C82620C631840059066F /* BKMapServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C82520C631840059066F /* BKMapServiceManager.m */; };
+		C173C83020C68DD90059066F /* AJAlterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173C82F20C68DD90059066F /* AJAlterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,6 +111,8 @@
 		C173C82220C62DE70059066F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C173C82420C631840059066F /* BKMapServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKMapServiceManager.h; sourceTree = "<group>"; };
 		C173C82520C631840059066F /* BKMapServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKMapServiceManager.m; sourceTree = "<group>"; };
+		C173C82E20C68DD70059066F /* EagleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EagleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C173C82F20C68DD90059066F /* AJAlterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJAlterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,12 +185,14 @@
 		C173C7D620BF8A600059066F /* TraceService */ = {
 			isa = PBXGroup;
 			children = (
+				C173C82F20C68DD90059066F /* AJAlterView.swift */,
 				C173C7DB20BF8A980059066F /* BKConstrants.h */,
 				C173C7DA20BF8A980059066F /* BKConstrants.m */,
 				C173C7D720BF8A720059066F /* BKTraceServiceManager.h */,
 				C173C7D820BF8A720059066F /* BKTraceServiceManager.m */,
 				C173C7F320BFDD810059066F /* UserEntity.h */,
 				C173C7F420BFDD810059066F /* UserEntity.m */,
+				C173C82E20C68DD70059066F /* EagleDemo-Bridging-Header.h */,
 			);
 			path = TraceService;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				TargetAttributes = {
 					C173C7B220BE36EB0059066F = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -358,6 +364,7 @@
 				C173C7F520BFDD810059066F /* UserEntity.m in Sources */,
 				C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */,
 				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
+				C173C83020C68DD90059066F /* AJAlterView.swift in Sources */,
 				C173C82620C631840059066F /* BKMapServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A44TJ86VM;
 				ENABLE_BITCODE = NO;
@@ -508,6 +516,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/resources",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EagleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = EagleDemo/Info.plist;
@@ -523,6 +532,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EagleDemo/TraceService/EagleDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};
@@ -533,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A44TJ86VM;
 				ENABLE_BITCODE = NO;
@@ -542,6 +555,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/resources",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EagleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = EagleDemo/Info.plist;
@@ -557,6 +571,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EagleDemo/TraceService/EagleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};

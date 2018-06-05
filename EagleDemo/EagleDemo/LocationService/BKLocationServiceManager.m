@@ -30,9 +30,9 @@
 }
 
 //创建地图围栏
-- (void)bk_creatGeoFence {
-    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(31.272657, 121.528776);
-    [self.geoFenceManager addCircleRegionForMonitoringWithCenter:center radius:100 coorType:BMKLocationCoordinateTypeBMK09LL customID:USERID];
+- (void)bk_creatGeoFence:(CLLocationCoordinate2D)coordinate name:(NSString *)gfName {
+    
+    [self.geoFenceManager addCircleRegionForMonitoringWithCenter:coordinate radius:100 coorType:BMKLocationCoordinateTypeBMK09LL customID:gfName];
 }
 /*
  - (void)removeTheGeoFenceRegion:(BMKGeoFenceRegion *)region; //移除指定围栏
@@ -139,25 +139,34 @@
         NSLog(@"XXOO geofence %@ status = %ld", region.customID, region.fenceStatus);
         switch(region.fenceStatus)
         {
-            case BMKGeoFenceRegionStatusInside:
+            case BMKGeoFenceRegionStatusInside:{
                 NSLog(@"XXOO 地理围栏状态：进入地理围栏");
-                ALERT(@"进入地理围栏");
+                NSString *tipMessage1 = [NSString stringWithFormat:@"进入地理围栏  %@", customID];
+                ALERT(tipMessage1);
                 break;
-                
+            }
             case BMKGeoFenceRegionStatusStayed:
+            {
                 NSLog(@"XXOO 地理围栏状态：停留在地理围栏");
-                ALERT(@"停留在地理围栏");
+                NSString *tipMessage2 = [NSString stringWithFormat:@"停留在地理围栏  %@", customID];
+                ALERT(tipMessage2);
                 break;
+            }
                 
             case BMKGeoFenceRegionStatusOutside:
+            {
                 NSLog(@"XXOO 地理围栏状态：离开地理围栏");
-                ALERT(@"离开地理围栏");
+                NSString *tipMessage2 = [NSString stringWithFormat:@"离开地理围栏  %@", customID];
+                ALERT(tipMessage2);
                 break;
-                
+            }
             default:
+            {
                 NSLog(@"XXOO 地理围栏状态：围栏状态未知");
-                ALERT(@"围栏状态未知");
+                NSString *tipMessage2 = [NSString stringWithFormat:@"围栏状态未知  %@", customID];
+                ALERT(tipMessage2);
                 break;
+            }
         }
     }
 

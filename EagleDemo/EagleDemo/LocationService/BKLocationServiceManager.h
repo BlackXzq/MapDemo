@@ -29,8 +29,10 @@
  */
 - (void)bk_stopUpdatingLocation;
 /**
- *  @brief 创建圆形围栏默认半径300m。
+ * coordinate 围栏中心点
+ * gfName： 围栏名称
+ *  @brief 创建圆形围栏默认半径100m。
  */
-- (void)bk_creatGeoFence;
+- (void)bk_creatGeoFence:(CLLocationCoordinate2D)coordinate name:(NSString *)gfName;
 - (void)bk_removeGeoFence;
 @end
