@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "LocationViewController.h"
 #import "EagleViewController.h"
-#import "BKTraceServiceManager.h"
-#import "BKLocationServiceManager.h"
+
 
 
 @interface AppDelegate ()

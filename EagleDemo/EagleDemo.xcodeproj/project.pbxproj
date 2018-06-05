@@ -34,6 +34,15 @@
 		C173C80920C11A710059066F /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80820C11A710059066F /* libstdc++.6.0.9.tbd */; };
 		C173C80B20C11A7B0059066F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C80A20C11A7B0059066F /* AdSupport.framework */; };
 		C173C80F20C11F2C0059066F /* BKLocationServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C80E20C11F2C0059066F /* BKLocationServiceManager.m */; };
+		C173C81320C62AD40059066F /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81020C62AD00059066F /* BaiduMapAPI_Location.framework */; };
+		C173C81420C62AD40059066F /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81120C62AD30059066F /* BaiduMapAPI_Map.framework */; };
+		C173C81520C62AD40059066F /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81220C62AD40059066F /* BaiduMapAPI_Base.framework */; };
+		C173C81720C62BB80059066F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81620C62BB80059066F /* QuartzCore.framework */; };
+		C173C81920C62BC80059066F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81820C62BC80059066F /* OpenGLES.framework */; };
+		C173C81B20C62BF50059066F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81A20C62BF50059066F /* CoreGraphics.framework */; };
+		C173C81E20C62C840059066F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81C20C62C840059066F /* libcrypto.a */; };
+		C173C81F20C62C840059066F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C173C81D20C62C840059066F /* libssl.a */; };
+		C173C82120C62D5A0059066F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C173C82020C62D5A0059066F /* mapapi.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +97,16 @@
 		C173C80A20C11A7B0059066F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C173C80D20C11F2C0059066F /* BKLocationServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKLocationServiceManager.h; sourceTree = "<group>"; };
 		C173C80E20C11F2C0059066F /* BKLocationServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKLocationServiceManager.m; sourceTree = "<group>"; };
+		C173C81020C62AD00059066F /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		C173C81120C62AD30059066F /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		C173C81220C62AD40059066F /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		C173C81620C62BB80059066F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C173C81820C62BC80059066F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C173C81A20C62BF50059066F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C173C81C20C62C840059066F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		C173C81D20C62C840059066F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		C173C82020C62D5A0059066F /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = resources/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		C173C82220C62DE70059066F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +114,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C173C81B20C62BF50059066F /* CoreGraphics.framework in Frameworks */,
+				C173C80120C11A410059066F /* SystemConfiguration.framework in Frameworks */,
+				C173C81E20C62C840059066F /* libcrypto.a in Frameworks */,
+				C173C81920C62BC80059066F /* OpenGLES.framework in Frameworks */,
+				C173C81720C62BB80059066F /* QuartzCore.framework in Frameworks */,
 				C173C80B20C11A7B0059066F /* AdSupport.framework in Frameworks */,
 				C173C80920C11A710059066F /* libstdc++.6.0.9.tbd in Frameworks */,
 				C173C80720C11A5F0059066F /* CoreTelephony.framework in Frameworks */,
+				C173C81320C62AD40059066F /* BaiduMapAPI_Location.framework in Frameworks */,
 				C173C80520C11A540059066F /* libsqlite3.0.tbd in Frameworks */,
 				C173C80320C11A4A0059066F /* Security.framework in Frameworks */,
-				C173C80120C11A410059066F /* SystemConfiguration.framework in Frameworks */,
+				C173C81F20C62C840059066F /* libssl.a in Frameworks */,
 				C173C7FF20C11A370059066F /* CoreLocation.framework in Frameworks */,
 				C173C7F920C117880059066F /* BaiduTraceSDK.framework in Frameworks */,
+				C173C81520C62AD40059066F /* BaiduMapAPI_Base.framework in Frameworks */,
+				C173C81420C62AD40059066F /* BaiduMapAPI_Map.framework in Frameworks */,
 				C173C7FC20C1199B0059066F /* BMKLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +140,7 @@
 		C173C7AA20BE36EB0059066F = {
 			isa = PBXGroup;
 			children = (
+				C173C82020C62D5A0059066F /* mapapi.bundle */,
 				C173C7B520BE36EB0059066F /* EagleDemo */,
 				C173C7B420BE36EB0059066F /* Products */,
 				C173C7FD20C11A370059066F /* Frameworks */,
@@ -142,6 +170,7 @@
 				C173C7C120BE36F20059066F /* LaunchScreen.storyboard */,
 				C173C7C420BE36F20059066F /* Info.plist */,
 				C173C7C520BE36F20059066F /* main.m */,
+				C173C82220C62DE70059066F /* PrefixHeader.pch */,
 			);
 			path = EagleDemo;
 			sourceTree = "<group>";
@@ -188,6 +217,11 @@
 		C173C7F620C116E70059066F /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C173C81C20C62C840059066F /* libcrypto.a */,
+				C173C81D20C62C840059066F /* libssl.a */,
+				C173C81220C62AD40059066F /* BaiduMapAPI_Base.framework */,
+				C173C81020C62AD00059066F /* BaiduMapAPI_Location.framework */,
+				C173C81120C62AD30059066F /* BaiduMapAPI_Map.framework */,
 				C173C7FB20C1199B0059066F /* BMKLocationKit.framework */,
 				C173C7F720C117810059066F /* BaiduTraceSDK.framework */,
 			);
@@ -197,6 +231,9 @@
 		C173C7FD20C11A370059066F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C173C81A20C62BF50059066F /* CoreGraphics.framework */,
+				C173C81820C62BC80059066F /* OpenGLES.framework */,
+				C173C81620C62BB80059066F /* QuartzCore.framework */,
 				C173C80A20C11A7B0059066F /* AdSupport.framework */,
 				C173C80820C11A710059066F /* libstdc++.6.0.9.tbd */,
 				C173C80620C11A5F0059066F /* CoreTelephony.framework */,
@@ -285,6 +322,7 @@
 				C173C7C320BE36F20059066F /* LaunchScreen.storyboard in Resources */,
 				C173C7C020BE36F20059066F /* images.xcassets in Resources */,
 				C173C7ED20BFBEE40059066F /* ScanContrailViewController.xib in Resources */,
+				C173C82120C62D5A0059066F /* mapapi.bundle in Resources */,
 				C173C7BE20BE36EB0059066F /* Main.storyboard in Resources */,
 				C173C7E120BF8BF00059066F /* LocationViewController.xib in Resources */,
 			);
@@ -455,11 +493,17 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/resources",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EagleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = EagleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/resources",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
@@ -481,11 +525,17 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/resources",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EagleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = EagleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/resources",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anji.plus.hawkeye;
