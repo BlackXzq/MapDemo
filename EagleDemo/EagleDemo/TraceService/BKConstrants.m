@@ -26,4 +26,12 @@ NSString * const USERNAME = @"Nero_H";
 NSString * const USERPHONENUM = @"13761238312";
 
 
+CGFloat const kTableViewCellPickerViewHeight = 216;
+
+CGFloat const kTableViewCellAnimationShowDuration = 0.25;
+
+CGFloat const kTableViewCellAnimationHideDuration = 0.1;
+
+CGFloat const kHeightForHeaderInSection = 28;
+
 @end

@@ -45,6 +45,13 @@
 		C173C82120C62D5A0059066F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C173C82020C62D5A0059066F /* mapapi.bundle */; };
 		C173C82620C631840059066F /* BKMapServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C82520C631840059066F /* BKMapServiceManager.m */; };
 		C173C83020C68DD90059066F /* AJAlterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173C82F20C68DD90059066F /* AJAlterView.swift */; };
+		C173C84020C77D0D0059066F /* YYArrowAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83320C77D0D0059066F /* YYArrowAnnotationView.m */; };
+		C173C84120C77D0D0059066F /* YYHistoryTrackParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83520C77D0D0059066F /* YYHistoryTrackParam.m */; };
+		C173C84220C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83720C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.m */; };
+		C173C84320C77D0D0059066F /* YYHistoryTrackPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83920C77D0D0059066F /* YYHistoryTrackPoint.m */; };
+		C173C84420C77D0D0059066F /* YYHistoryTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83B20C77D0D0059066F /* YYHistoryTrackViewController.m */; };
+		C173C84520C77D0D0059066F /* YYHistoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83D20C77D0D0059066F /* YYHistoryViewModel.m */; };
+		C173C84620C77D0D0059066F /* YYMultiColorPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = C173C83F20C77D0D0059066F /* YYMultiColorPolyline.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,6 +120,20 @@
 		C173C82520C631840059066F /* BKMapServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKMapServiceManager.m; sourceTree = "<group>"; };
 		C173C82E20C68DD70059066F /* EagleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EagleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		C173C82F20C68DD90059066F /* AJAlterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJAlterView.swift; sourceTree = "<group>"; };
+		C173C83220C77D0D0059066F /* YYArrowAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYArrowAnnotationView.h; sourceTree = "<group>"; };
+		C173C83320C77D0D0059066F /* YYArrowAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYArrowAnnotationView.m; sourceTree = "<group>"; };
+		C173C83420C77D0D0059066F /* YYHistoryTrackParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHistoryTrackParam.h; sourceTree = "<group>"; };
+		C173C83520C77D0D0059066F /* YYHistoryTrackParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHistoryTrackParam.m; sourceTree = "<group>"; };
+		C173C83620C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHistoryTrackParamSetTableViewController.h; sourceTree = "<group>"; };
+		C173C83720C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHistoryTrackParamSetTableViewController.m; sourceTree = "<group>"; };
+		C173C83820C77D0D0059066F /* YYHistoryTrackPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHistoryTrackPoint.h; sourceTree = "<group>"; };
+		C173C83920C77D0D0059066F /* YYHistoryTrackPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHistoryTrackPoint.m; sourceTree = "<group>"; };
+		C173C83A20C77D0D0059066F /* YYHistoryTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHistoryTrackViewController.h; sourceTree = "<group>"; };
+		C173C83B20C77D0D0059066F /* YYHistoryTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHistoryTrackViewController.m; sourceTree = "<group>"; };
+		C173C83C20C77D0D0059066F /* YYHistoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHistoryViewModel.h; sourceTree = "<group>"; };
+		C173C83D20C77D0D0059066F /* YYHistoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHistoryViewModel.m; sourceTree = "<group>"; };
+		C173C83E20C77D0D0059066F /* YYMultiColorPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMultiColorPolyline.h; sourceTree = "<group>"; };
+		C173C83F20C77D0D0059066F /* YYMultiColorPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMultiColorPolyline.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +189,7 @@
 				C173C7D620BF8A600059066F /* TraceService */,
 				C173C80C20C11F0A0059066F /* LocationService */,
 				C173C82320C631670059066F /* MapService */,
+				C173C83120C77D0D0059066F /* historyTrace */,
 				C173C7E820BFBE610059066F /* eagle */,
 				C173C7E720BFBE580059066F /* location */,
 				C173C7B620BE36EB0059066F /* AppDelegate.h */,
@@ -272,6 +294,27 @@
 			path = MapService;
 			sourceTree = "<group>";
 		};
+		C173C83120C77D0D0059066F /* historyTrace */ = {
+			isa = PBXGroup;
+			children = (
+				C173C83220C77D0D0059066F /* YYArrowAnnotationView.h */,
+				C173C83320C77D0D0059066F /* YYArrowAnnotationView.m */,
+				C173C83420C77D0D0059066F /* YYHistoryTrackParam.h */,
+				C173C83520C77D0D0059066F /* YYHistoryTrackParam.m */,
+				C173C83620C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.h */,
+				C173C83720C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.m */,
+				C173C83820C77D0D0059066F /* YYHistoryTrackPoint.h */,
+				C173C83920C77D0D0059066F /* YYHistoryTrackPoint.m */,
+				C173C83A20C77D0D0059066F /* YYHistoryTrackViewController.h */,
+				C173C83B20C77D0D0059066F /* YYHistoryTrackViewController.m */,
+				C173C83C20C77D0D0059066F /* YYHistoryViewModel.h */,
+				C173C83D20C77D0D0059066F /* YYHistoryViewModel.m */,
+				C173C83E20C77D0D0059066F /* YYMultiColorPolyline.h */,
+				C173C83F20C77D0D0059066F /* YYMultiColorPolyline.m */,
+			);
+			path = historyTrace;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,11 +400,18 @@
 				C173C7DC20BF8A990059066F /* BKConstrants.m in Sources */,
 				C173C7EC20BFBEE40059066F /* ScanContrailViewController.m in Sources */,
 				C173C7E520BF8BFF0059066F /* EagleViewController.m in Sources */,
+				C173C84320C77D0D0059066F /* YYHistoryTrackPoint.m in Sources */,
 				C173C7E020BF8BF00059066F /* LocationViewController.m in Sources */,
+				C173C84120C77D0D0059066F /* YYHistoryTrackParam.m in Sources */,
+				C173C84620C77D0D0059066F /* YYMultiColorPolyline.m in Sources */,
 				C173C7C620BE36F20059066F /* main.m in Sources */,
 				C173C80F20C11F2C0059066F /* BKLocationServiceManager.m in Sources */,
 				C173C7B820BE36EB0059066F /* AppDelegate.mm in Sources */,
 				C173C7F520BFDD810059066F /* UserEntity.m in Sources */,
+				C173C84220C77D0D0059066F /* YYHistoryTrackParamSetTableViewController.m in Sources */,
+				C173C84520C77D0D0059066F /* YYHistoryViewModel.m in Sources */,
+				C173C84420C77D0D0059066F /* YYHistoryTrackViewController.m in Sources */,
+				C173C84020C77D0D0059066F /* YYArrowAnnotationView.m in Sources */,
 				C173C7F120BFBEF30059066F /* ContrailViewController.m in Sources */,
 				C173C7D920BF8A720059066F /* BKTraceServiceManager.m in Sources */,
 				C173C83020C68DD90059066F /* AJAlterView.swift in Sources */,

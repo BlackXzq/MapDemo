@@ -30,7 +30,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo0-Ud-2Le">
-                    <rect key="frame" x="67" y="295" width="240" height="38"/>
+                    <rect key="frame" x="67" y="244" width="240" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.96460998840000001" green="1" blue="0.59726299829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="轨迹查看"/>
@@ -38,8 +38,8 @@
                         <action selector="guijichakan:" destination="-1" eventType="touchUpInside" id="V73-xW-5sq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gME-bT-Bq7">
-                    <rect key="frame" x="67" y="216" width="240" height="38"/>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gME-bT-Bq7">
+                    <rect key="frame" x="67" y="198" width="240" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.96460998840000001" green="1" blue="0.59726299829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="围栏设置"/>

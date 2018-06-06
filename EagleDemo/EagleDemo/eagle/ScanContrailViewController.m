@@ -8,10 +8,8 @@
 
 #import "ScanContrailViewController.h"
 
-@interface ScanContrailViewController ()<BMKMapViewDelegate, BMKLocationServiceDelegate>
+@interface ScanContrailViewController ()<BMKMapViewDelegate, BTKTrackDelegate>
 @property (nonatomic, strong) BMKMapView* mapView;
-@property (nonatomic, strong) BMKLocationService* locService;
-@property (nonatomic, assign) BOOL firstShowMe;
 @end
 
 @implementation ScanContrailViewController
@@ -19,18 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"轨迹查看";
-    self.firstShowMe = true;
     
     _mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
     _mapView.showsUserLocation = YES;//显示定位图层
     _mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态为普通定位模式
     self.view = _mapView;
     
-    //初始化BMKLocationService
-    _locService = [[BMKLocationService alloc]init];
-    _locService.delegate = self;
-    //启动LocationService
-    [_locService startUserLocationService];
+    BTKQueryTrackProcessOption *option = [[BTKQueryTrackProcessOption alloc] init];
+    option.denoise = TRUE; //设置纠偏时是否需要去噪
+    option.vacuate = true; //设置纠偏时是否需要抽稀
+//    option.mapMatch = TRUE; // 设置纠偏时是否需要绑路
+    option.radiusThreshold = 10;
+    option.transportMode = 1; //轨迹对应的交通方式 DRIVING:1 驾车 RIDING:2 骑行 WALKING:3 步行
+    // 构造请求对象
+    BTKQueryTrackLatestPointRequest *request = [[BTKQueryTrackLatestPointRequest alloc] initWithEntityName:USERNAME processOption: option outputCootdType:BTK_COORDTYPE_BD09LL serviceID:serviceID tag:1];
+    // 发起查询请求
+    [[BTKTrackAction sharedInstance] queryTrackLatestPointWith:request delegate:self];
     
     
 }
@@ -52,28 +54,6 @@
     _mapView.delegate = nil;
 }
 
-#pragma mark- BMKLocationServiceDelegate
-/**
- *用户方向更新后，会调用此函数
- *@param userLocation 新的用户位置
- */
-- (void)didUpdateUserHeading:(BMKUserLocation *)userLocation {
-//    NSLog(@"XXOO heading is %@",userLocation.heading);
-}
-
-/**
- *用户位置更新后，会调用此函数
- *@param userLocation 新的用户位置
- */
-- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation; {
-NSLog(@"XXOO didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
-    [_mapView updateLocationData:userLocation];
-    if (self.firstShowMe) {
-        [_mapView setCenterCoordinate:userLocation.location.coordinate animated:NO];
-        self.firstShowMe = false;
-    }
-}
-
 
 #pragma mark- BMKMapViewDelegate
 /**
@@ -87,11 +67,76 @@ NSLog(@"XXOO didUpdateUserLocation lat %f,long %f",userLocation.location.coordin
 
 /**
  *长按地图时会回调此接口
- *@param mapview 地图View
+ *@param mapView 地图View
  *@param coordinate 返回长按事件坐标点的经纬度
  */
 - (void)mapview:(BMKMapView *)mapView onLongClick:(CLLocationCoordinate2D)coordinate {
     NSLog(@"XXOO onLongClick latitude: %lf longitude: %lf", coordinate.latitude, coordinate.longitude);
 }
+
+#pragma mark-  BTKTrackDelegate
+/**
+ 上传开发者自定义轨迹点的回调方法
+ 
+ @param response 上传结果
+ */
+-(void)onAddCustomTrackPoint:(NSData *)response {
+    NSLog(@"XXOO: onAddCustomTrackPoint");
+}
+
+/**
+ 批量上传开发者自定义的轨迹点的回调方法
+ 
+ @param response 上传结果
+ */
+-(void)onBatchAddCustomTrackPoint:(NSData *)response {
+    NSLog(@"XXOO: onBatchAddCustomTrackPoint");
+}
+
+/**
+ 实时位置查询的回调方法
+ 
+ @param response 查询结果
+ */
+-(void)onQueryTrackLatestPoint:(NSData *)response {
+    NSLog(@"XXOO: onQueryTrackLatestPoint");
+}
+
+/**
+ 里程查询的回调方法
+ 
+ @param response 查询结果
+ */
+-(void)onQueryTrackDistance:(NSData *)response {
+    NSLog(@"XXOO: onQueryTrackDistance");
+}
+
+/**
+ 轨迹查询的回调方法
+ 
+ @param response 查询结果
+ */
+-(void)onQueryHistoryTrack:(NSData *)response {
+    NSLog(@"XXOO: onQueryHistoryTrack");
+}
+
+/**
+ 缓存查询的回调方法
+ 
+ @param response 查询结果
+ */
+-(void)onQueryTrackCacheInfo:(NSData *)response {
+    NSLog(@"XXOO: onQueryTrackCacheInfo");
+}
+
+/**
+ 清空缓存的回调方法
+ 
+ @param response 清空操作的结果
+ */
+-(void)onClearTrackCache:(NSData *)response {
+    NSLog(@"XXOO: onClearTrackCache");
+}
+
 
 @end

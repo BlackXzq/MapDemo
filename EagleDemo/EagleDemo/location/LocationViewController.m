@@ -87,6 +87,9 @@
     if (self.firstShowMe) {
         [_mapView setCenterCoordinate:userLocation.location.coordinate animated:NO];
         self.firstShowMe = false;
+        [USER_DEFAULTS setObject:[NSKeyedArchiver archivedDataWithRootObject:userLocation.location] forKey:LATEST_LOCATION];
+        [USER_DEFAULTS synchronize];
+
     }
 }
 

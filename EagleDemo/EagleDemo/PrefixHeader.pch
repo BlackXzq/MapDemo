@@ -19,5 +19,6 @@
 #import "BKTraceServiceManager.h"
 #import "BKLocationServiceManager.h"
 #import "BKMapServiceManager.h"
+#import "BKConstrants.h"
 
 #endif /* PrefixHeader_pch */
