@@ -35,9 +35,9 @@
 }
 //  围栏设置
 - (IBAction)weilanshezhi:(UIButton *)sender {
-    YYHistoryTrackViewController *historyCtl = [[YYHistoryTrackViewController alloc] init];
-    historyCtl.hidesBottomBarWhenPushed = true;
-    [self.navigationController pushViewController:historyCtl animated:true];
+    ScanContrailViewController *scanCtl = [[ScanContrailViewController alloc] init];
+    scanCtl.hidesBottomBarWhenPushed = true;
+    [self.navigationController pushViewController:scanCtl animated:true];
 
 }
 //  轨迹查看
@@ -45,10 +45,6 @@
     YYHistoryTrackViewController *historyCtl = [[YYHistoryTrackViewController alloc] init];
     historyCtl.hidesBottomBarWhenPushed = true;
     [self.navigationController pushViewController:historyCtl animated:true];
-    
-//    ScanContrailViewController *scanCtl = [[ScanContrailViewController alloc] init];
-//    scanCtl.hidesBottomBarWhenPushed = true;
-//    [self.navigationController pushViewController:scanCtl animated:true];
 }
 
 /*

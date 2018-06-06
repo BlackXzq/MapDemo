@@ -100,6 +100,15 @@
  */
 -(void)onQueryTrackLatestPoint:(NSData *)response {
     NSLog(@"XXOO: onQueryTrackLatestPoint");
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingAllowFragments error:nil];
+    if (nil == dict) {
+        NSLog(@"HISTORY TRACK查询格式转换出错");
+        return;
+    }
+    if (0 != [dict[@"status"] intValue]) {
+        NSLog(@"HISTORY TRACK查询返回错误");
+        return;
+    }
 }
 
 /**
